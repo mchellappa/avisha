@@ -7,11 +7,14 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
+
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
         }
         .container {
+            background: url('/static/background.jpg') no-repeat center center;
+            background-size: contain;
             text-align: center;
             padding: 50px;
         }
@@ -25,7 +28,6 @@
         }
         .floral-background {
             position: relative;
-            background: url('https://www.w3schools.com/w3images/flowers.jpg') no-repeat center center;
             background-size: cover;
             height: 500px;
             filter: brightness(0.7);
@@ -53,19 +55,25 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" >
         <div class="header">
-            Happy Mother's Day! 
+            Happy Mother's Day! I loough you so much !!!
         </div>
-        <div class="floral-background">
-            <div class="message">
-            I love you so much !!!
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 20px;">
+            <div style="flex: 1; text-align: center; margin-right: 10px;">
+            <img src="Collage.jpg" alt="Collage" style="max-width: 100%; height: auto; border-radius: 10px;">
             </div>
-            <video controls style="max-width: 100%; height: auto; border-radius: 10px; margin-top: 20px;">
+            <div style="flex: 1; text-align: center; margin-right: 10px;">
+            <img src="background.jpg" alt="Sunshine" style="max-width: 100%; height: auto; border-radius: 10px;">
+            </div>
+            <div style="flex: 1; text-align: center;"></div>
+            <video controls style="max-width: 100%; height: auto; border-radius: 10px;">
                 <source src="mothers_day_video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            </div>
         </div>
+
 
         </div>
         <div class="footer">
