@@ -60,13 +60,15 @@
             Happy Mother's Day! I loough you so much !!!
             <button id="toggleButton" style="margin-left: 20px; padding: 10px 20px; font-size: 16px; background-color: white; color: #ff9a8b; border: none; border-radius: 5px; cursor: pointer;">Open</button>
         </div>
+        <div id="backgroundImage" style="margin-top: 20px;">
+            <img src="background.jpg" alt="Sunshine" style="width: 100%; height: auto; object-fit: contain; border-radius: 10px;">
+        </div>
         <div id="content" style="display: none; margin-top: 20px;">
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
                 <div style="flex: 1 1 300px; text-align: center; position: relative;">
                     <img src="Collage.jpg" alt="Collage" style="width: 100%; height: auto; object-fit: contain; border-radius: 10px;">
                 </div>
                 <div style="flex: 1 1 300px; text-align: center; position: relative;">
-                    <div><img src="background.jpg" alt="Sunshine" style="width: 100%; height: auto; object-fit: contain; border-radius: 10px;"></div>
                     <video controls style="width: 100%; height: auto; object-fit: contain; border-radius: 10px;">
                         <source src="MOVIE.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -81,13 +83,16 @@
             </div>
         </div>
         <script>
-            document.getElementById('toggleButton').addEventListener('click', function () {
+           document.getElementById('toggleButton').addEventListener('click', function () {
                 const content = document.getElementById('content');
+                const backgroundImage = document.getElementById('backgroundImage');
                 if (content.style.display === 'none') {
                     content.style.display = 'block';
+                    backgroundImage.style.display = 'none';
                     this.textContent = 'Close';
                 } else {
                     content.style.display = 'none';
+                    backgroundImage.style.display = 'block';
                     this.textContent = 'Open';
                 }
             });
