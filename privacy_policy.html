@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy for KalviPal</title>
+  <meta name="description" content="KalviPal Privacy Policy" />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --accent: #1d4ed8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 16px 64px;
+    }
+    article {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+    }
+    h1, h2, h3, h4 {
+      line-height: 1.3;
+      margin-top: 1.6em;
+      margin-bottom: 0.5em;
+    }
+    h1 { margin-top: 0; font-size: 2rem; }
+    h2 { font-size: 1.4rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+    h3 { font-size: 1.15rem; }
+    h4 { font-size: 1rem; }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); }
+    ul, ol { padding-left: 1.35rem; }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: #f3f4f6;
+      border-radius: 4px;
+      padding: 0.1em 0.3em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>Privacy Policy for KalviPal</h1>
+      <p><strong>Last Updated:</strong> February 21, 2026</p>
+
+      <hr />
+
+      <h2>Introduction</h2>
+      <p>KalviPal ("we," "our," or "us") is committed to protecting the privacy of children and their families. This Privacy Policy explains how we collect, use, and protect information when you use our educational mobile application.</p>
+      <p>KalviPal is designed for children ages 3-15 and complies with the Children's Online Privacy Protection Act (COPPA) and other applicable privacy laws.</p>
+      <p><strong>Important:</strong> Our app uses automatic background sync (enabled by default) to download new educational content and backup learning progress to secure cloud storage. You can disable this at any time in Settings. See “How We Store Information” below for details.</p>
+
+      <h2>Information We Collect</h2>
+      <h3>Personal Information</h3>
+      <p>We collect the following information:</p>
+
+      <h4>Kid Profiles</h4>
+      <ul>
+        <li>Child's name (first name only)</li>
+        <li>Age or age range (3-5, 6-9, 10-12, 13-15)</li>
+        <li>Avatar selection (no photos)</li>
+      </ul>
+
+      <h4>Account Information (Parent/Guardian)</h4>
+      <ul>
+        <li>Email address (for account creation)</li>
+        <li>Account credentials (handled securely by Firebase Authentication)</li>
+      </ul>
+
+      <h4>Learning Progress</h4>
+      <ul>
+        <li>Lessons completed</li>
+        <li>Quiz scores and answers</li>
+        <li>Time spent on activities</li>
+        <li>Progress through educational content</li>
+      </ul>
+
+      <h3>Automatically Collected Information</h3>
+      <ul>
+        <li>Device type and operating system</li>
+        <li>Device ID (for sync tracking)</li>
+        <li>App version</li>
+        <li>Session duration</li>
+        <li>Error logs and crash reports (anonymized)</li>
+      </ul>
+
+      <h3>Information We Do NOT Collect</h3>
+      <ul>
+        <li>❌ Full names or surnames</li>
+        <li>❌ Photos or videos</li>
+        <li>❌ Location data</li>
+        <li>❌ Contact information for children</li>
+        <li>❌ Social security numbers</li>
+        <li>❌ Payment information (app is free)</li>
+      </ul>
+
+      <h2>How We Use Information</h2>
+      <p>We use collected information for the following purposes:</p>
+      <ol>
+        <li><strong>Educational Progress:</strong> Track learning progress and completion</li>
+        <li><strong>App Functionality:</strong> Save user preferences and profiles</li>
+        <li><strong>Content Delivery:</strong> Download new lessons and educational content to your device</li>
+        <li><strong>Progress Backup:</strong> Automatically backup learning progress to cloud (when enabled)</li>
+        <li><strong>Cross-Device Sync:</strong> Enable progress sync across multiple devices (when enabled)</li>
+        <li><strong>Improvement:</strong> Improve app features and user experience</li>
+        <li><strong>Support:</strong> Provide customer support when needed</li>
+      </ol>
+
+      <h2>How We Store Information</h2>
+      <h3>Local Storage (SQLite)</h3>
+      <ul>
+        <li>All learning data is stored <strong>locally</strong> on your device using SQLite database</li>
+        <li>The app works fully offline using local storage</li>
+      </ul>
+
+      <h3>Cloud Storage (Supabase - Automatic Background Sync)</h3>
+      <p><strong>Automatic Sync is ENABLED by default</strong> and runs in the background:</p>
+
+      <h4>What Gets Synced</h4>
+      <p><strong>Downloaded to Your Device (Automatic):</strong></p>
+      <ul>
+        <li>New educational lessons and content from our servers</li>
+        <li>Lesson updates and improvements</li>
+        <li>Syncs every 24 hours when internet is available</li>
+      </ul>
+
+      <p><strong>Uploaded from Your Device (Automatic):</strong></p>
+      <ul>
+        <li>Child's learning progress (lessons completed, scores, time spent)</li>
+        <li>Kid profile ID and lesson IDs</li>
+        <li>Device ID for sync tracking</li>
+        <li>Completion timestamps</li>
+        <li>Only syncs when you're logged in with an authenticated account</li>
+      </ul>
+
+      <h4>How Sync Works</h4>
+      <ul>
+        <li>Checks for updates every 24 hours automatically</li>
+        <li>Runs in the background when app is opened</li>
+        <li>Requires internet connection</li>
+        <li><strong>You can disable automatic sync at any time</strong> in Settings</li>
+        <li>All data is encrypted in transit (HTTPS/TLS)</li>
+        <li>Data is stored in secure cloud servers (Supabase)</li>
+      </ul>
+
+      <h4>Disabling Sync</h4>
+      <ul>
+        <li>Go to Settings → Disable "Auto-sync"</li>
+        <li>App continues to work fully offline</li>
+        <li>No data will be uploaded or downloaded</li>
+        <li>Existing local data remains on your device</li>
+      </ul>
+
+      <h3>Authentication (Firebase)</h3>
+      <ul>
+        <li>Account authentication is handled by Google Firebase</li>
+        <li>Credentials are encrypted and securely managed</li>
+        <li>We do not store passwords directly</li>
+      </ul>
+
+      <h2>Data Sharing and Disclosure</h2>
+      <p>We <strong>DO NOT</strong> sell, trade, or rent your child's information to third parties.</p>
+
+      <h3>Third-Party Services We Use</h3>
+      <h4>Firebase Authentication (Google)</h4>
+      <ul>
+        <li>Purpose: Secure user login</li>
+        <li>Privacy Policy: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+      </ul>
+
+      <h4>Supabase (Cloud Database)</h4>
+      <ul>
+        <li>Purpose: Automatic background sync for lessons and learning progress (enabled by default)</li>
+        <li>What's synced: New lessons downloaded, progress uploaded (scores, completion, time spent)</li>
+        <li>Frequency: Every 24 hours automatically</li>
+        <li>Can be disabled: Yes, in app Settings</li>
+        <li>Privacy Policy: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></li>
+      </ul>
+
+      <h3>When We May Disclose Information</h3>
+      <p>We may disclose information only in the following limited circumstances:</p>
+      <ul>
+        <li>With parental consent</li>
+        <li>To comply with legal obligations (court orders, subpoenas)</li>
+        <li>To protect the safety of children or others</li>
+        <li>To trusted service providers who help operate the app (under strict confidentiality)</li>
+      </ul>
+
+      <h2>Parental Rights (COPPA Compliance)</h2>
+      <p>As a parent or legal guardian, you have the right to:</p>
+      <ol>
+        <li><strong>Review</strong> the personal information collected from your child</li>
+        <li><strong>Delete</strong> your child's profile and data at any time</li>
+        <li><strong>Refuse</strong> further collection of your child's information</li>
+        <li><strong>Disable</strong> cloud sync features</li>
+      </ol>
+
+      <h3>How to Exercise Your Rights</h3>
+      <p>To review, delete, or manage your child's information:</p>
+      <ul>
+        <li><strong>In-App:</strong> Go to Settings → Kid Profile → Delete Profile</li>
+        <li><strong>Email Us:</strong> muthuc@credgesolutions.com</li>
+        <li><strong>Response Time:</strong> We will respond within 48 hours</li>
+      </ul>
+
+      <h2>Data Retention</h2>
+      <ul>
+        <li><strong>Active Accounts:</strong> We retain data while your account is active</li>
+        <li><strong>Deleted Profiles:</strong> Data is permanently deleted within 30 days of deletion request</li>
+        <li><strong>Inactive Accounts:</strong> Accounts inactive for 2+ years may be automatically deleted</li>
+      </ul>
+
+      <h2>Security Measures</h2>
+      <p>We implement industry-standard security measures:</p>
+      <ul>
+        <li>✅ Encryption in transit (HTTPS/TLS)</li>
+        <li>✅ Secure authentication (Firebase)</li>
+        <li>✅ Regular security audits</li>
+        <li>✅ Access controls and authentication</li>
+        <li>✅ Local-first data storage</li>
+      </ul>
+      <p>However, no method of electronic storage is 100% secure. We cannot guarantee absolute security.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>KalviPal is designed specifically for children and complies with COPPA requirements:</p>
+      <ul>
+        <li>We collect minimal information necessary for app functionality</li>
+        <li>We require verifiable parental consent for children under 13</li>
+        <li>We do not enable public profiles or social features</li>
+        <li>We do not display behavioral advertising to children</li>
+        <li>We do not share children's information with third parties for marketing</li>
+      </ul>
+
+      <h2>Your Choices</h2>
+      <h3>Automatic Cloud Sync</h3>
+      <ul>
+        <li>Automatic sync is <strong>ENABLED by default</strong></li>
+        <li>Runs in the background every 24 hours</li>
+        <li>Downloads new lessons automatically</li>
+        <li>Uploads learning progress automatically (requires login)</li>
+        <li><strong>Disable at any time</strong> in Settings → "Auto-sync"</li>
+        <li>App works fully offline when sync is disabled</li>
+        <li>No data uploaded/downloaded when sync is disabled</li>
+      </ul>
+
+      <h3>Account Deletion</h3>
+      <ul>
+        <li>Delete kid profiles individually or entire account</li>
+        <li>All data is permanently removed</li>
+        <li>Request deletion via Settings or email</li>
+      </ul>
+
+      <h3>Marketing Communications</h3>
+      <ul>
+        <li>We do not send marketing emails</li>
+        <li>We send only essential account-related communications</li>
+        <li>You can opt out of non-essential emails</li>
+      </ul>
+
+      <h2>International Users</h2>
+      <p>KalviPal is operated from the United States. If you access the app from outside the United States, your information may be transferred to, stored, and processed in the United States or other countries where our service providers operate.</p>
+      <p>By using the app, you consent to this transfer.</p>
+
+      <h3>GDPR Rights (European Users)</h3>
+      <p>If you are in the European Economic Area (EEA), you have additional rights:</p>
+      <ul>
+        <li>Right to access your data</li>
+        <li>Right to rectification</li>
+        <li>Right to erasure</li>
+        <li>Right to data portability</li>
+        <li>Right to object to processing</li>
+      </ul>
+      <p>Contact us at muthuc@credgesolutions.com to exercise these rights.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. When we do:</p>
+      <ul>
+        <li>We will update the “Last Updated” date</li>
+        <li>We will notify you via in-app notification</li>
+        <li>For material changes, we will request renewed consent</li>
+      </ul>
+      <p>Continued use of the app after changes indicates acceptance of the updated policy.</p>
+
+      <h2>Contact Us</h2>
+      <p>If you have questions or concerns about this Privacy Policy or our data practices:</p>
+      <p>
+        <strong>Email:</strong> muthuc@credgesolutions.com<br />
+        <strong>Website:</strong> https://credgesolutions.com<br />
+        <strong>Mailing Address:</strong><br />
+        Credge Solutions<br />
+        Shrewsbury, MA<br />
+        United States
+      </p>
+      <p><strong>Response Time:</strong> We aim to respond within 48 hours.</p>
+
+      <h2>Third-Party Links</h2>
+      <p>KalviPal does not contain links to third-party websites or services. All content is self-contained within the app.</p>
+
+      <h2>Cookies and Tracking</h2>
+      <p>KalviPal does not use cookies or tracking technologies for advertising purposes. We use only essential session management for authentication.</p>
+
+      <h2>Your California Privacy Rights</h2>
+      <p>California residents have additional rights under the California Consumer Privacy Act (CCPA):</p>
+      <ul>
+        <li>Right to know what personal information is collected</li>
+        <li>Right to delete personal information</li>
+        <li>Right to opt-out of sale (we do not sell information)</li>
+      </ul>
+      <p>Contact us to exercise these rights.</p>
+
+      <h2>Consent</h2>
+      <p>By using KalviPal:</p>
+      <ul>
+        <li>Parents/guardians consent to collection as described</li>
+        <li>Parents confirm they have authority to consent for their child</li>
+        <li>Parents can withdraw consent at any time by deleting the account</li>
+      </ul>
+
+      <p><strong>KalviPal</strong> - Educational Learning for Kids<br />
+      Version 1.0.0<br />
+      © 2026 Credge Solutions. All rights reserved.</p>
+    </article>
+  </main>
+</body>
+</html>
