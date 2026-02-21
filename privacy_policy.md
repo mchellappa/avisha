@@ -34,6 +34,12 @@ We collect the following information:
 - Time spent on activities
 - Progress through educational content
 
+#### **Parent-Uploaded Videos (Grandma's Corner)**
+- Parents/guardians can upload videos for their children
+- Videos are stored locally on the device only
+- Videos are only accessible within that family's account on that device
+- Parents/guardians can delete videos at any time
+
 ### Automatically Collected Information
 - Device type and operating system
 - Device ID (for sync tracking)
@@ -43,7 +49,8 @@ We collect the following information:
 
 ### Information We Do NOT Collect
 - ❌ Full names or surnames
-- ❌ Photos or videos
+- ❌ Photos of children for profile creation
+- ✅ Videos may be uploaded by parents/guardians in Grandma's Corner and remain local to the device
 - ❌ Location data
 - ❌ Contact information for children
 - ❌ Social security numbers
@@ -60,8 +67,9 @@ We use collected information for the following purposes:
 3. **Content Delivery:** Download new lessons and educational content to your device
 4. **Progress Backup:** Automatically backup learning progress to cloud (when enabled)
 5. **Cross-Device Sync:** Enable progress sync across multiple devices (when enabled)
-6. **Improvement:** Improve app features and user experience
-7. **Support:** Provide customer support when needed
+6. **Family Content Storage:** Store parent-uploaded Grandma's Corner videos locally on your device
+7. **Improvement:** Improve app features and user experience
+8. **Support:** Provide customer support when needed
 
 ---
 
@@ -88,6 +96,11 @@ We use collected information for the following purposes:
 - Device ID for sync tracking
 - Completion timestamps
 - Only syncs when you're logged in with an authenticated account
+
+#### **What is NOT Synced:**
+- Grandma's Corner parent-uploaded videos are never uploaded to cloud servers
+- Videos are never included in automatic background sync
+- Videos remain stored locally on your device only
 
 #### **How Sync Works:**
 - Checks for updates every 24 hours automatically
