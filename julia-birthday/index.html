@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy 45th Birthday Julia</title>
+<style>
+:root{--bg:#f8f4ef;--ink:#302b27;--accent:#a45d66;--gold:#b58a43}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,serif}
+.card{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.panel{width:min(1000px,100%);background:#fffdf9;border-radius:30px;box-shadow:0 18px 60px #0002;overflow:hidden}
+.hero{position:relative;padding:50px 36px 30px;text-align:center;background:linear-gradient(145deg,#fffaf5,#f4e9e2)}
+.kicker{letter-spacing:.25em;font:600 13px Arial,sans-serif;color:var(--accent)}
+h1{font-size:clamp(42px,8vw,82px);margin:12px 0 0}
+.subtitle{font-size:20px;margin:8px 0 22px;color:#6d6259}
+#play{border:0;border-radius:999px;background:var(--accent);color:white;padding:15px 25px;font:bold 15px Arial;cursor:pointer;box-shadow:0 8px 20px #a45d6644}
+#play.playing{background:#76515a}
+.music{margin-top:12px;font:12px Arial;color:#81766d;min-height:18px}
+.collage{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:22px}
+.photo{aspect-ratio:1;border-radius:18px;overflow:hidden;background:#eee6de;position:relative}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;display:block}
+.center45{grid-column:2/4;grid-row:2/4;display:flex;align-items:center;justify-content:center;position:relative;z-index:2}
+.center45 .num{font:bold 230px/1 Arial,sans-serif;color:#a45d66;text-shadow:0 8px 20px #0001}
+.center45 .heart{position:absolute;bottom:16%;font-size:38px}
+.message{text-align:center;padding:30px 24px 48px}
+.message h2{font-size:32px;margin:0 0 10px}
+.message p{font-size:21px;line-height:1.5;margin:0;color:#665c54}
+.footer{font:12px Arial;color:#9b9189;margin-top:20px}
+@media(max-width:650px){.collage{grid-template-columns:repeat(2,1fr)}.center45{grid-column:1/3;grid-row:auto;min-height:180px}.center45 .num{font-size:150px}}
+</style>
+</head>
+<body>
+<div class="card"><main class="panel">
+<section class="hero">
+<div class="kicker">A VERY SPECIAL BIRTHDAY</div>
+<h1>Happy 45th, Julia</h1>
+<div class="subtitle">A little birthday song, made just for you ❤️</div>
+<button id="play">▶ Play my birthday song</button>
+<div class="music" id="status">Tap play to hear the surprise</div>
+<audio id="song" preload="metadata">
+  <source src="julia_birthday_song.m4a" type="audio/mp4">
+</audio>
+</section>
+
+<section class="collage">
+<div class="photo"><img src="00100dPORTRAIT_00100_BURST20200113193508213_COVER.jpg" alt="Julia smiling in a navy blue outfit"></div>
+<div class="photo"><img src="PXL_20201114_203456428.PORTRAIT-01.COVER.jpg" alt="Julia in a black and gold outfit"></div>
+<div class="photo"><img src="PXL_20220822_213902811.jpg" alt="Julia in her Coast Guard uniform"></div>
+<div class="photo"><img src="PXL_20221120_151444440.PORTRAIT.jpg" alt="Julia wearing a pink and purple sari"></div>
+<div class="photo"><img src="PXL_20230226_235509326.jpg" alt="Julia smiling in front of Niagara Falls"></div>
+<div class="center45"><div class="num">45</div><div class="heart">♥</div></div>
+<div class="photo"><img src="PXL_20231014_135301975.PORTRAIT.jpg" alt="Julia holding a baby"></div>
+<div class="photo"><img src="PXL_20240225_021954371.jpg" alt="Julia in a red sari"></div>
+<div class="photo"><img src="PXL_20250511_165855666.jpg" alt="A close-up portrait of Julia"></div>
+</section>
+
+<section class="message">
+<h2>Happy Birthday, Julia ❤️</h2>
+<p>I love you so much.</p>
+<div class="footer">Made with love for Julia ❤️</div>
+</section>
+</main></div>
+
+<script>
+const audio=document.getElementById('song'), btn=document.getElementById('play'), status=document.getElementById('status');
+btn.addEventListener('click', async ()=>{
+  if(audio.paused){
+    try{await audio.play(); btn.textContent='❚❚ Pause'; btn.classList.add('playing'); status.textContent='Your birthday song is playing…';}
+    catch(e){status.textContent='Tap Play again to start the song.';}
+  }else{audio.pause(); btn.textContent='▶ Play my birthday song'; btn.classList.remove('playing'); status.textContent='Paused';}
+});
+audio.addEventListener('ended',()=>{btn.textContent='▶ Play my birthday song';btn.classList.remove('playing');status.textContent='❤️ Happy Birthday, Julia!';});
+</script>
+</body>
+</html>
